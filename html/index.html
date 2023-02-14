@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light  py-5">
+    <div class="container d-flex justify-content-between">
+      <div class="logo d-flex align-items-center">
+        <img src="../img/logo@2x.png" alt="" width="60px">
+        <a class="navbar-brand text-white fw-bold ps-3" href="#">Weather</a>
+
+      </div>
+      <button class="navbar-toggler mb-5" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class=" collapse navbar-collapse justify-content-lg-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-between ">
+          <li class="nav-item">
+            <a class="nav-link active px-4" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4" href="#">contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="before-content">
+    <div class="back-ground" id="image">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="search mb-5 main-col d-flex justify-content-between py-2 mt-5 px-3" id="search">
+            <input type="text" class="form-control bg-transparent border-0 text-white"
+              placeholder="Find your location..." aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn px-4" type="button" id="button-addon2">Find</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="content">
+      <div class="container">
+        <div class="row position-relative overflow-hidden">
+          <div class="col-md-4 p-0 ">
+            <div class="item today ">
+              <div class="item-header d-flex justify-content-between px-2 pt-2">
+                <p id="currentday" class="gray-txt"></p>
+                <p id="day-month" class="gray-txt"></p>
+              </div>
+              <div class="item-content p-4">
+                <span id="country" class="gray-txt"></span>
+
+                <div class="maindeg  py-4">
+                  <div class="deg d-flex justify-content-between ">
+                    <span id="deg1" class="px90 fw-bold"></span>
+                    <span class="px90 fw-bold"><sup>o</sup></span>
+                    <span class="px90 fw-bold">c</span>
+                    <div class="weather-icon" id="current-icon"></div>
+                  </div>
+                </div>
+
+
+                <div class="condition pb-3 condcol condfont" id="condition-txt-1">
+
+                </div>
+                <span class="gray-txt"><img src="../img/icon-umberella.png" alt=""> 20%</span>
+                <span class="px-4 gray-txt"><img src="../img/icon-wind.png" alt=""> 20%</span>
+                <span class="gray-txt"><img src="../img/icon-compass.png" alt=""> 20%</span>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-4 p-0 col-center text-center">
+            <div class="item today ">
+              <div class="item-header d-flex justify-content-center px-2 pt-2 header-center">
+                <p id="day-2" class="gray-txt"></p>
+              </div>
+              <div class="item-content p-4 ">
+                <div class="weather-icon pt-4 pb-3" id="icon-2"></div>
+                <div class="pb-2">
+                  <span id="deg2-1" class="px-24 fw-bold"></span>
+                  <sup class="px-24 fw-bold">o</sup>
+                  <span class="px-24 fw-bold">c</span>
+                </div>
+                <div>
+                  <span id="deg2-2" class="condfont px-16 gray-txt"></span>
+                  <sup class="condfont px-16 gray-txt">o</sup>
+                  <span class="condfont px-16 gray-txt">c</span>
+                </div>
+
+
+                <div class="condition pt-3 condcol condfont" id="condition-txt-2"></div>
+
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-4 p-0 text-center">
+            <div class="item today ">
+              <div class="item-header d-flex justify-content-center px-2 pt-2">
+                <p id="day-3" class="gray-txt"></p>
+
+              </div>
+              <div class="item-content p-4">
+                <div class="weather-icon pt-4 pb-3" id="icon-3"></div>
+                <div class="pb-2">
+                  <span id="deg3-1" class="px-24 fw-bold"></span>
+                  <sup class="px-24 fw-bold">o</sup>
+                  <span class="px-24 fw-bold">c</span>
+                </div>
+                <div>
+                  <span id="deg3-2" class="condfont px-16 gray-txt"></span>
+                  <sup class="condfont px-16 gray-txt">o</sup>
+                  <span class="condfont px-16 gray-txt">c</span>
+                </div>
+
+
+                <div class="condition pt-3 condcol condfont" id="condition-txt-3">
+
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+  </div>
+
+  <footer class="d-flex justify-content-between py-5">
+    <div class="container">
+      <div class="row d-flex justify-content-between">
+        <div class="col-md-8 my-4">
+          <div class="search main-col d-flex justify-content-between py-2 px-3">
+            <input type="text" class="form-control bg-transparent border-0 text-white"
+              placeholder="Enter your email to Subscribe..." aria-label="Recipient's username"
+              aria-describedby="button-addon2">
+            <button class="btn px-4" type="button" id="button-addon2">Subscribe</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 d-flex justify-content-end my-4">
+          <div class="icons w-50 d-flex justify-content-around">
+            <i class="fa-brands fa-facebook-f  d-flex justify-content-center align-items-center m-auto"></i>
+            <i class="fa-brands fa-twitter  d-flex justify-content-center align-items-center m-auto"></i>
+            <i class="fa-brands fa-google-plus-g  d-flex justify-content-center align-items-center m-auto"></i>
+            <i class="fa-brands fa-pinterest-p  d-flex justify-content-center align-items-center m-auto"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+
+  </footer>
+
+
+  <script src="../js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

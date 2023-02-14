@@ -1,0 +1,156 @@
+/* general style */
+.w-60{
+    width: 60%;
+}
+
+.px90{
+    font-size: 90px;
+}
+
+.condcol{
+    color:#009ad8;
+}
+.condfont{
+    font-size: 14px;
+}
+.px-16{
+    font-size: 16px;
+}
+
+.px-24{
+    font-size: 24px;
+}
+
+.gray-txt{
+    color: #BFC1C8;
+}
+
+/* ------------------------------------------- */
+
+/* Start navbar style ---------------------*/
+.navbar{
+    background-color: #1E202B;
+}
+
+
+.nav-link{
+    color: #fff !important;
+}
+
+.nav-item .active{
+    color: #009ad8 !important;
+    border: solid 2px #009ad8;
+    border-radius: 50px;
+    
+}
+.nav-link{
+    transition: all 0.5s;
+    border: solid transparent 2px  ;
+    border-radius: 50px;
+    
+}
+.nav-link:hover{
+    color: #009ad8 !important;
+    /* border-radius: 50px;
+    border: solid 2px #009ad8 ; */
+    border: solid #009ad8 2px  ;
+
+   
+}
+.nav-link:hover{
+    color: #009ad8;
+}
+
+/*End navbar style ---------------------*/
+
+/* start content style ---------------------*/
+.back-ground{
+    background-image: url("../img/banner.png");
+    min-height: 350px;
+    background-size: cover;
+}
+
+.before-content{
+    background-color: #1E202B;
+}
+
+.main-col{
+    background-color: #1E202B;
+}
+body{
+    color: #fff;
+}
+.col-md-4{
+    background-color: #323544;
+}
+.row{
+    left: 150px;
+    right: 150px;
+    top: 30%;
+}
+.item-header{
+    background-color:#2D303D;
+}
+
+.header-center{
+    background-color: #222531;
+}
+
+.col-center{
+    background-color: #262936;
+}
+.btn{
+    background-color: #009ad8;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.search{
+    border-radius: 50px;
+}
+/* end content style ---------------------*/
+
+/* start footer style ---------------------*/
+
+footer{
+    background-color:#323544;
+}
+
+footer .container{
+    width: 80%;
+}
+
+i{
+    background-color: #222531;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #009ad8;
+    transition: all 0.3s;
+}
+i:hover{
+   color: #fff;
+   background-color: #009ad8;
+
+}
+footer p{
+    font-size: 14px;
+    color: #BFC1C8;
+}
+
+
+.back-ground .container,.content .container{
+    width: 85%;
+}
+
+.content .row{
+    top: -120px;
+    left: 0;
+}
+
+
+.content .row{
+    border-radius: 15px;
+}
+
+/* end footer style ---------------------*/
